@@ -1,0 +1,22 @@
+
+
+
+
+
+
+<owl-carousel-o class="cards-wrapper" [options]="customOptions">
+  <ng-container class="card d-none d-md-block" *ngFor="let slide of data">
+    <ng-template carouselSlide>
+      <div class="card-body">
+      <img [src]="slide.path">
+      <h5 class="card-title">{{slide.name}}</h5>
+      <p class="card-text">{{slide.title}}</p>
+      <a class="btn btn-primary">Go somewhere</a>
+    </div>
+    </ng-template>
+  </ng-container>
+</owl-carousel-o>
+
+
+
+
